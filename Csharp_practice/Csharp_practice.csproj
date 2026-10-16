@@ -5,12 +5,7 @@
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>Csharp_practice.classandobj</StartupObject>
+    <StartupObject>Csharp_practice.Step_2.Cinheritance</StartupObject>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Folder Include="basics step 1\" />
-    <Folder Include="Step_2\" />
-  </ItemGroup>
 
 </Project>
