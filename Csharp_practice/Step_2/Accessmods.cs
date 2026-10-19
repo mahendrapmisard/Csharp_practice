@@ -195,7 +195,6 @@ namespace AccessModifiersDemo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("=== PUBLIC, PRIVATE, PROTECTED, INTERNAL ===");
 
             PublicClass obj = new PublicClass();
 
@@ -206,17 +205,14 @@ namespace AccessModifiersDemo
             obj.DisplayInsideClass();
             obj.CallPrivateMethod();
 
-            Console.WriteLine("\n=== DERIVED CLASS ACCESS ===");
 
             DerivedClass derived = new DerivedClass();
             derived.DisplayDerivedAccess();
 
-            Console.WriteLine("\n=== INTERNAL CLASS ===");
 
             InternalClass internalObj = new InternalClass();
             internalObj.Display();
 
-            Console.WriteLine("\n=== PROPERTY ACCESS MODIFIERS ===");
 
             Student student = new Student("Mahendra");
             student.Marks = 85;
@@ -227,23 +223,18 @@ namespace AccessModifiersDemo
             student.Marks = 150;
             Console.WriteLine("Marks after invalid update: " + student.Marks);
 
-            Console.WriteLine("\n=== PRIVATE DATA ENCAPSULATION ===");
 
             Account account = new Account(1000);
             account.Deposit(500);
             account.DisplayBalance();
 
-            Console.WriteLine("\n=== PROTECTED METHOD ===");
 
             Shape circle = new Circle(5);
             Console.WriteLine("Area: " + circle.CalculateArea());
 
-            Console.WriteLine("\n=== STATIC MEMBERS ===");
 
             Utility.DisplayMessage();
             Utility.InternalUtility();
-
-            Console.WriteLine("\n=== REQUIRED AND INIT ===");
 
             Employee employee = new Employee
             {
@@ -254,7 +245,6 @@ namespace AccessModifiersDemo
             Console.WriteLine(employee.Name);
             Console.WriteLine(employee.Id);
 
-            Console.WriteLine("\n=== METHOD OVERRIDING ===");
 
             BaseExample example = new ChildExample();
             example.Display();
