@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Csharp_practice.step_3
+namespace Csharp_practice.generics
 {
 
     class Program

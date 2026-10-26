@@ -5,7 +5,7 @@
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>polymorphism.Program</StartupObject>
+    <StartupObject>Csharp_practice.testpractice.program</StartupObject>
   </PropertyGroup>
 
 </Project>
