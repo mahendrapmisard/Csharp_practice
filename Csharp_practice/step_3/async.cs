@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Csharp_practice.step_3
 {
-    class async
+    class Async
     {
         public void ticketcounter()
         {
@@ -35,7 +35,7 @@ namespace Csharp_practice.step_3
     {
         public static void Main()
         {
-            async obj = new async();
+            Async obj = new Async();
             obj.ticketcounter();
             obj.dharshanam();
             obj.ladducounter();

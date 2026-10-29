@@ -5,7 +5,7 @@
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>Csharp_practice.task.Tasks</StartupObject>
+    <StartupObject>Csharp_practice.step_4.Arrays</StartupObject>
   </PropertyGroup>
 
 </Project>
