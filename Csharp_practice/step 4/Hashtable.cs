@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Csharp_practice.step_4
 {
-    class Hashtable
+    class HashtablePractice
     {
         public static void Main()
         {
@@ -24,18 +24,18 @@ namespace Csharp_practice.step_4
             CopyHashtable();
             CloneHashtable();
             PassHashtableToMethod();
-            ReturnHashtableFromMethod();
+            Console.WriteLine(ReturnHashtableFromMethod()["CSharp"]);
             ClearHashtable();
         }
 
         static void CreateHashtable()
         {
             Hashtable students = new Hashtable()
-        {
-            { 101, "Mahendra" },
-            { 102, "Madan" },
-            { 103, "Kavya" }
-        };
+            {
+                { 101, "Mahendra" },
+                { 102, "Madan" },
+                { 103, "Kavya" }
+            };
 
             Console.WriteLine(students[101]);
         }
@@ -59,11 +59,11 @@ namespace Csharp_practice.step_4
         static void ReadHashtable()
         {
             Hashtable marks = new Hashtable()
-        {
-            { "Java", 85 },
-            { "CSharp", 90 },
-            { "Angular", 80 }
-        };
+            {
+                { "Java", 85 },
+                { "CSharp", 90 },
+                { "Angular", 80 }
+            };
 
             Console.WriteLine(marks["CSharp"]);
         }
@@ -71,10 +71,10 @@ namespace Csharp_practice.step_4
         static void UpdateValue()
         {
             Hashtable students = new Hashtable()
-        {
-            { 101, "Mahendra" },
-            { 102, "Madan" }
-        };
+            {
+                { 101, "Mahendra" },
+                { 102, "Madan" }
+            };
 
             students[101] = "Ravi";
 
@@ -105,11 +105,11 @@ namespace Csharp_practice.step_4
         static void DeleteElement()
         {
             Hashtable students = new Hashtable()
-        {
-            { 101, "Mahendra" },
-            { 102, "Madan" },
-            { 103, "Kavya" }
-        };
+            {
+                { 101, "Mahendra" },
+                { 102, "Madan" },
+                { 103, "Kavya" }
+            };
 
             students.Remove(102);
 
@@ -119,10 +119,10 @@ namespace Csharp_practice.step_4
         static void SearchHashtable()
         {
             Hashtable students = new Hashtable()
-        {
-            { 101, "Mahendra" },
-            { 102, "Madan" }
-        };
+            {
+                { 101, "Mahendra" },
+                { 102, "Madan" }
+            };
 
             Console.WriteLine(students.ContainsKey(101));
             Console.WriteLine(students.ContainsKey(105));
@@ -132,11 +132,11 @@ namespace Csharp_practice.step_4
         static void LoopHashtable()
         {
             Hashtable students = new Hashtable()
-        {
-            { 101, "Mahendra" },
-            { 102, "Madan" },
-            { 103, "Kavya" }
-        };
+            {
+                { 101, "Mahendra" },
+                { 102, "Madan" },
+                { 103, "Kavya" }
+            };
 
             foreach (DictionaryEntry student in students)
             {
@@ -147,10 +147,10 @@ namespace Csharp_practice.step_4
         static void GetKeysAndValues()
         {
             Hashtable students = new Hashtable()
-        {
-            { 101, "Mahendra" },
-            { 102, "Madan" }
-        };
+            {
+                { 101, "Mahendra" },
+                { 102, "Madan" }
+            };
 
             foreach (object key in students.Keys)
             {
@@ -166,10 +166,10 @@ namespace Csharp_practice.step_4
         static void TryGetValueExample()
         {
             Hashtable students = new Hashtable()
-        {
-            { 101, "Mahendra" },
-            { 102, "Madan" }
-        };
+            {
+                { 101, "Mahendra" },
+                { 102, "Madan" }
+            };
 
             if (students.ContainsKey(101))
             {
@@ -185,11 +185,11 @@ namespace Csharp_practice.step_4
         static void CountHashtable()
         {
             Hashtable prices = new Hashtable()
-        {
-            { 1, 99.50 },
-            { 2, 150.75 },
-            { 3, 200.25 }
-        };
+            {
+                { 1, 99.50 },
+                { 2, 150.75 },
+                { 3, 200.25 }
+            };
 
             Console.WriteLine(prices.Count);
         }
@@ -197,10 +197,10 @@ namespace Csharp_practice.step_4
         static void CopyHashtable()
         {
             Hashtable original = new Hashtable()
-        {
-            { 101, "Mahendra" },
-            { 102, "Madan" }
-        };
+            {
+                { 101, "Mahendra" },
+                { 102, "Madan" }
+            };
 
             Hashtable copy = new Hashtable(original);
 
@@ -210,10 +210,10 @@ namespace Csharp_practice.step_4
         static void CloneHashtable()
         {
             Hashtable original = new Hashtable()
-        {
-            { "Java", 85 },
-            { "CSharp", 90 }
-        };
+            {
+                { "Java", 85 },
+                { "CSharp", 90 }
+            };
 
             Hashtable copy = (Hashtable)original.Clone();
 
@@ -223,10 +223,10 @@ namespace Csharp_practice.step_4
         static void PassHashtableToMethod()
         {
             Hashtable students = new Hashtable()
-        {
-            { 101, "Mahendra" },
-            { 102, "Madan" }
-        };
+            {
+                { 101, "Mahendra" },
+                { 102, "Madan" }
+            };
 
             DisplayStudents(students);
         }
@@ -242,24 +242,23 @@ namespace Csharp_practice.step_4
         static Hashtable ReturnHashtableFromMethod()
         {
             return new Hashtable()
-        {
-            { "Java", 85 },
-            { "CSharp", 90 }
-        };
+            {
+                { "Java", 85 },
+                { "CSharp", 90 }
+            };
         }
 
         static void ClearHashtable()
         {
             Hashtable students = new Hashtable()
-        {
-            { 101, "Mahendra" },
-            { 102, "Madan" }
-        };
+            {
+                { 101, "Mahendra" },
+                { 102, "Madan" }
+            };
 
             students.Clear();
 
             Console.WriteLine(students.Count);
         }
     }
-}
 }
