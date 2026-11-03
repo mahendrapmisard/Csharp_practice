@@ -48,6 +48,22 @@ namespace Csharp_practice.step_6
             };
 
 
+            logger("print this");
+
+            Predicate<bool> check = (bool value) =>
+            {
+                return value;
+            };
+
+            bool res = check(true);
+            Console.WriteLine(res);
+
+            Func<string , string, string> names(string fname,string lname)
+            {
+                return fname+" "+lname;
+
+            }
+
 
 
 
