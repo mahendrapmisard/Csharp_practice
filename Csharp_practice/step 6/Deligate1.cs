@@ -58,11 +58,10 @@ namespace Csharp_practice.step_6
             bool res = check(true);
             Console.WriteLine(res);
 
-            Func<string , string, string> names(string fname,string lname)
+            Func<string, string, string> names = (string fname, string lname) =>
             {
-                return fname+" "+lname;
-
-            }
+                return fname + " " + lname;
+            };
 
 
 
