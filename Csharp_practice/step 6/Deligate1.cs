@@ -64,8 +64,8 @@ namespace Csharp_practice.step_6
             };
 
 
-
-
+            string fullname= names("mahendra", "reddy");
+            Console.WriteLine(fullname);
 
         }
             public static void greet(string name) {
