@@ -31,10 +31,10 @@ namespace Csharp_practice.basics_step_1
             //Console.WriteLine("employee total salary " + (salary + bonus));
 
 
-            //Console.WriteLine("Enter any number please :  ");
-            //int EnteredNumber = Convert.ToInt32(Console.ReadLine());
-            //string funout =  checki(EnteredNumber);
-            //Console.WriteLine(funout);
+            Console.WriteLine("Enter any number please :  ");
+            int EnteredNumber = Convert.ToInt32(Console.ReadLine());
+            string funout = checki(EnteredNumber);
+            Console.WriteLine(funout);
             //string funout1 = checkii(EnteredNumber);
             //Console.WriteLine(funout1);
             //checkiii(EnteredNumber);
