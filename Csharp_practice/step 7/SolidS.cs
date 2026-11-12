@@ -41,7 +41,7 @@ namespace Csharp_practice.step_7
     {
         public void Generate(Employee employee, SalaryCalculator calculator)
         {
-            Console.WriteLine("\n----- EMPLOYEE REPORT -----");
+     
 
             Console.WriteLine($"Name: {employee.Name}");
             Console.WriteLine($"Salary: {employee.Salary}");
