@@ -1,27 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using System.Threading.Tasks;
 
-namespace Csharp_practice.step_3
+class Program
 {
-    class Program
+    public static void Main()
     {
-        public static async Task Main()
-        {
-            Console.WriteLine("Start");
+        GetData();
+    }
 
-            await GetData();
+    public static async void GetData()
+    {
+        Console.WriteLine("Fetching data...");
 
-            Console.WriteLine("End");
-        }
+        await Task.Delay(3000);
 
-        public static async Task GetData()
-        {
-            Console.WriteLine("Fetching data...");
-
-            await Task.Delay(3000);
-
-            Console.WriteLine("Data received");
-        }
+        Console.WriteLine("Data received");
     }
 }
