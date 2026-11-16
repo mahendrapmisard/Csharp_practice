@@ -10,8 +10,8 @@ namespace Csharp_practice.basics_step_1
 
         static void Main()
         {
-            //Console.WriteLine("Enter your name: ");
-            //string name = Console.ReadLine();
+            Console.WriteLine("Enter your name: ");
+            string name = Console.ReadLine();
             //Console.WriteLine("Enter your id");
             //String input_id = Console.ReadLine();
             //int id = Convert.ToInt32(input_id);
