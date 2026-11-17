@@ -5,7 +5,7 @@
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>Csharp_practice.step_7.SolidI</StartupObject>
+    <StartupObject>Csharp_practice.Practice.Exercise2Program</StartupObject>
   </PropertyGroup>
 
 </Project>
